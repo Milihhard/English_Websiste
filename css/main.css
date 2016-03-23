@@ -7,8 +7,20 @@ h1 {
     color: white;
     margin: 0;
 }
+p{
+    margin:0;
+}
+a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+a:hover{
+    text-decoration: blink;
+}
 
-header {
+header, footer {
+    padding: 10px;
     background-color: rgb(51, 51, 51);
 }
 
@@ -19,37 +31,38 @@ header {
 .parallax {
     height: 500px;
 }
+#nav{
+    display: inline;
+}
+#title{
+    display: inline;
+}
 
 #slide1 {
-    background: url("../src/wallhaven-10694.jpg") center 0 no-repeat fixed;
+    background: url("../src/red_wallpaper.jpg") center 0 no-repeat fixed;
     background-size: cover;
     color: white;
-    height: 1300px;
+    height: 1600px;
     margin: 0 auto;
     overflow: hidden;
     padding: 0;
+    padding-top: 300px;
 }
 
 #imgTest {
-    background: url("../src/testParallax.png")  50% 0 no-repeat fixed;
-    height: 20%;
-    margin: 0 auto;
+    background: black center 0 no-repeat fixed;
+    background-size: cover;
     padding: 0;
     position: absolute;
-    width: 900px;
+    width: 50%;
     z-index: 200;
-    margin-left:10px;
-
-}
-
-#imgTest img{
-    height: inherit;
+    margin-top:100px;
+    margin-left: 25%;
 }
 
 #slide2 {
-    background: rgb(51,51,51) center 0 no-repeat fixed;
-    height: 500px;
-    background-size: cover;
+    background: rgb(51, 51, 51);
+    height: 1000px;
 }
 
 #slide3 {
@@ -58,7 +71,24 @@ header {
     background-size: cover;
 }
 
-.float-left{
+.center{
+    width:50%;
+    margin-left:auto;
+    margin-right:auto;
+}
+.center h1{
+    text-align: center;
+}
+
+.float-left {
     float: left;
-    margin-left:20px;
+    margin-left: 20px;
+}
+
+.textAlignCenter{
+    text-align: center;
+}
+
+.marginAuto{
+    margin-left: 44%;
 }

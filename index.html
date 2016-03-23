@@ -9,16 +9,15 @@
     <script type="text/javascript" src="scripts/jquery.localscroll-1.2.7-min.js"></script>
     <script type="text/javascript" src="scripts/jquery.scrollTo-1.4.2-min.js"></script>
     <script type="text/javascript">
-        $(document).ready(function(){
+        $(document).ready(function () {
             $('#nav').localScroll(800);
 
             //.parallax(xPosition, speedFactor, outerHeight) options:
             //xPosition - Horizontal position of the element
             //inertia - speed to move relative to vertical scroll. Example: 0.1 is one tenth the speed of scrolling, 2 is twice the speed of scrolling
             //outerHeight (true/false) - Whether or not jQuery should use it's outerHeight option to determine when a section is in the viewport
-            $('#slide1').parallax("50%", 0.1);
-            $('#imgTest').parallax("50%", 0.3);
-            $('#slide2').parallax("50%", 0.1);
+            $('#slide1').parallax("100%", 0.2, true);
+            //$('#imgTest').parallax("50%", 0.3);
             //$('.bg').parallax("50%", 0.4);
             $('#slide3').parallax("50%", 0.3);
 
@@ -28,31 +27,27 @@
 <body>
 
 <header>
-    <p>pouet</p>
+    <div class="center">
+        <div id="title">
+        <img class="marginAuto" src="src/headset2x.png"/>
+        <h1>MUZY</h1>
+        </div>
+    </div>
 
 </header>
 <main>
-    <p>pouet</p>
-
     <div id="slide1">
-        <h1>niah</h1>
-        <div id="imgTest">
-            <img src="src/preview.gif">
+        <div id="slide2">
+            <h1 class="textAlignCenter">What is muzy?</h1>
+            <img id="imgTest" src="src/preview.gif">
+            <P>
+                muzy is An application to
+            </P>
         </div>
     </div>
-    <div id="slide2">
-        <h1>niah</h1>
-        <P>
-            kdvjhsdlgjfd<br>hfghgf
-            hfdhkgfd<br>
-            hkfd<br>
-            hdf<br>
-            gdkf<br>
-            gdfiglglhdgfhlgfdhlgfdhkgmldskjgdkgjlkgj<br>dlkgjdfljghldkjgedrgr
-        </P>
-    </div>
+
     <div id="slide3">
-        <h1>niah</h1>
+        <h1 class="textAlignCenter">Format the application can listen</h1>
     </div>
 </main>
 <footer>
